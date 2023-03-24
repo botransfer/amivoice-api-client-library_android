@@ -27,6 +27,7 @@ class Wrp_ extends Wrp implements Runnable {
 	private static javax.net.ssl.HostnameVerifier _hostNameVerifier = new javax.net.ssl.HostnameVerifier() {
 		@Override
 		public boolean verify(String hostName, javax.net.ssl.SSLSession sslSession) {
+                  /*
 			try {
 				final int hostName_domainIndex = hostName.indexOf('.') + 1;
 				final int hostName_domainLength = hostName.length() - hostName_domainIndex;
@@ -81,6 +82,8 @@ class Wrp_ extends Wrp implements Runnable {
 			} catch (Exception e) {
 				return false;
 			}
+                  */
+                        return true;
 		}
 	};
 
